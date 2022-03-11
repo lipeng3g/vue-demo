@@ -5,7 +5,7 @@ COPY app ./
 RUN ls /build/app
 
 RUN rm -rf package-lock.json
-RUN apt -y update && apt -y install git
+RUN apt -y install git
 RUN npm install
 RUN npm run build:prod
 
