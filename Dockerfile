@@ -7,7 +7,7 @@ RUN ls /build/app
 RUN rm -rf package-lock.json
 RUN apt -y update && apt -y install git
 RUN npm install
-RUN npm run build
+RUN npm run build:prod
 
 RUN ls /build/app/dist
 
