@@ -46,13 +46,13 @@ export const constantRoutes = [
     children: [
       {
         path: '/redirect/:path(.*)',
-        component: () => import('@/views/redirect/index')
+        component: () => import('@/views/redirect')
       }
     ]
   },
   {
     path: '/login',
-    component: () => import('@/views/login/index'),
+    component: () => import('@/views/login'),
     hidden: true
   },
   {
@@ -77,7 +77,7 @@ export const constantRoutes = [
     children: [
       {
         path: 'dashboard',
-        component: () => import('@/views/dashboard/index'),
+        component: () => import('@/views/dashboard'),
         name: 'Dashboard',
         meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
       }
@@ -89,7 +89,7 @@ export const constantRoutes = [
     children: [
       {
         path: 'index',
-        component: () => import('@/views/documentation/index'),
+        component: () => import('@/views/documentation'),
         name: 'Documentation',
         meta: { title: 'Documentation', icon: 'documentation', affix: true }
       }
@@ -102,7 +102,7 @@ export const constantRoutes = [
     children: [
       {
         path: 'index',
-        component: () => import('@/views/guide/index'),
+        component: () => import('@/views/guide'),
         name: 'Guide',
         meta: { title: 'Guide', icon: 'guide', noCache: true }
       }
@@ -116,7 +116,7 @@ export const constantRoutes = [
     children: [
       {
         path: 'index',
-        component: () => import('@/views/profile/index'),
+        component: () => import('@/views/profile'),
         name: 'Profile',
         meta: { title: 'Profile', icon: 'user', noCache: true }
       }
@@ -177,7 +177,7 @@ export const asyncRoutes = [
     children: [
       {
         path: 'index',
-        component: () => import('@/views/icons/index'),
+        component: () => import('@/views/icons'),
         name: 'Icons',
         meta: { title: 'Icons', icon: 'icon', noCache: true }
       }
@@ -228,7 +228,7 @@ export const asyncRoutes = [
     children: [
       {
         path: 'index',
-        component: () => import('@/views/tab/index'),
+        component: () => import('@/views/tab'),
         name: 'Tab',
         meta: { title: 'Tab', icon: 'tab' }
       }
@@ -266,7 +266,7 @@ export const asyncRoutes = [
     children: [
       {
         path: 'log',
-        component: () => import('@/views/error-log/index'),
+        component: () => import('@/views/error-log'),
         name: 'ErrorLog',
         meta: { title: 'Error Log', icon: 'bug' }
       }
@@ -320,7 +320,7 @@ export const asyncRoutes = [
     children: [
       {
         path: 'download',
-        component: () => import('@/views/zip/index'),
+        component: () => import('@/views/zip'),
         name: 'ExportZip',
         meta: { title: 'Export Zip' }
       }
@@ -334,7 +334,7 @@ export const asyncRoutes = [
     children: [
       {
         path: 'index',
-        component: () => import('@/views/pdf/index'),
+        component: () => import('@/views/pdf'),
         name: 'PDF',
         meta: { title: 'PDF', icon: 'pdf' }
       }
@@ -352,7 +352,7 @@ export const asyncRoutes = [
     children: [
       {
         path: 'index',
-        component: () => import('@/views/theme/index'),
+        component: () => import('@/views/theme'),
         name: 'Theme',
         meta: { title: 'Theme', icon: 'theme' }
       }
@@ -365,7 +365,7 @@ export const asyncRoutes = [
     children: [
       {
         path: 'index',
-        component: () => import('@/views/clipboard/index'),
+        component: () => import('@/views/clipboard'),
         name: 'ClipboardDemo',
         meta: { title: 'Clipboard', icon: 'clipboard' }
       }

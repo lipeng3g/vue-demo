@@ -14,7 +14,7 @@ const tableRouter = {
   children: [
     {
       path: 'dynamic-table',
-      component: () => import('@/views/table/dynamic-table/index'),
+      component: () => import('@/views/table/dynamic-table'),
       name: 'DynamicTable',
       meta: { title: 'Dynamic Table' }
     },
